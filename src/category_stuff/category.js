@@ -1,7 +1,15 @@
-import {sayHello} from "todo_stuff/todo.js"
+/* A category of todo's (such as short-term, long-term, work) */
 
-const greet = () => {
-  sayHello();
+function todoCategoryFactory(title){
+  let todosInCategory = [];
+
+  const add = (todo) => {
+    todosInCategory.push(todo);
+  }
+
+  return{title,
+    todosInCategory,
+    add}
 }
 
-export { greet }
+export{todoCategoryFactory};
