@@ -38,8 +38,9 @@ const magicDOMTools = (() => {
       }
     }
 
-    const clearBody = () => {
-      document.body.innerHTML = "";
+    const clearDisplay = () => {
+      const display = document.getElementById('displayContent');
+      display.innerHTML = "";
     }
 
     return {createElement,
@@ -49,7 +50,7 @@ const magicDOMTools = (() => {
       createAddtextAddclasses,
       appendChildren,
       appendToBody,
-      clearBody}
+      clearDisplay}
 })();
 
 export {magicDOMTools}
