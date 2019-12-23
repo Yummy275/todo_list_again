@@ -1,0 +1,25 @@
+.categoryLink{
+  background:none;
+  border:none;
+  margin:0;
+  padding:0;
+  display: block;
+}
+
+.categoryLink:hover{
+  color: green;
+}
+
+.catDiv{
+  text-align: center;
+}
+
+body{
+  height: 100%;
+  width: 100%;
+  background: rgb(88,95,102);
+  background: rgb(88,95,102);
+  background: rgb(88,95,102);
+  background: radial-gradient(circle, rgba(88,95,102,1) 14%, rgba(126,85,85,1) 31%,
+    rgba(77,162,82,1) 54%, rgba(86,157,242,0.8407738095238095) 92%);
+}

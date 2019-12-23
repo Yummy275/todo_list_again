@@ -3,8 +3,6 @@ import {categoriesHolder} from "./categories_holder"
 import {createCategory} from "./button_functions"
 
 const categoriesDisplay = () => {
-  magicDOMTools.clearDisplay();
-
   const catDiv = magicDOMTools.createAddtextAddclasses('div', "", 'catDiv');
 
   /*Print out categories of todo's*/
@@ -22,7 +20,7 @@ const categoriesDisplay = () => {
   const deletebtn = magicDOMTools.createAddtextAddclasses("button", "Delete", "normalBtn", "catBtn");
 
   magicDOMTools.appendChildren(catDiv, addbtn, editbtn, deletebtn);
-  magicDOMTools.appendToBody(catDiv);
+  magicDOMTools.appendToDisplayContent(catDiv);
 }
 
 export{categoriesDisplay}

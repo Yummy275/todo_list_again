@@ -32,15 +32,14 @@ const magicDOMTools = (() => {
       }
     }
 
-    const appendToBody = (...targets) => {
+    const appendToDisplayContent = (...targets) => {
       for (var target of targets){
-        document.body.appendChild(target);
+        document.getElementById('displayContent').appendChild(target);
       }
     }
 
     const clearDisplay = () => {
-      const display = document.getElementById('displayContent');
-      display.innerHTML = "";
+      document.getElementById('displayContent').innerHTML = "";
     }
 
     return {createElement,
@@ -49,7 +48,7 @@ const magicDOMTools = (() => {
       setEventListenerClick,
       createAddtextAddclasses,
       appendChildren,
-      appendToBody,
+      appendToDisplayContent,
       clearDisplay}
 })();
 
