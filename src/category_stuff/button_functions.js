@@ -14,5 +14,11 @@ const createCategory = () => {
   displayAllCategories();
 }
 
+const deleteCat = (category) => {
+  categoriesHolder.deleteFromContainer(category);
+  displayAllCategories();
+}
+
 export {createCategory,
-        specificCategoryLink}
+        specificCategoryLink,
+        deleteCat}

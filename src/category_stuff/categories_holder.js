@@ -3,12 +3,17 @@
 const categoriesHolder = (() => {
   let container = [];
 
-  const addToContainer = (category) =>{
+  const addToContainer = (category) => {
     container.push(category);
   }
 
+  const deleteFromContainer = (category) => {
+    container.splice(container.indexOf(category), 1);
+  }
+
   return{container,
-    addToContainer}
+        addToContainer,
+        deleteFromContainer}
 })();
 
 export {categoriesHolder}

@@ -25,7 +25,7 @@ const magicDOMTools = (() => {
       }
       return newElement;
     }
-
+    
     const appendChildren = (target , ...names) => {
       for (var name of names){
         target.appendChild(name);
