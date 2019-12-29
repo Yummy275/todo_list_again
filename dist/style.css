@@ -1,16 +1,26 @@
+.categoryDiv{
+}
+
+.catBtn{
+}
+
+.catEditDeleteBtnDiv{
+  display: inline-grid;
+}
+
 .categoryLink{
+  font-size: 64px;
   background:none;
   border:none;
   margin:0;
   padding:0;
-  display: block;
 }
 
 .categoryLink:hover{
   color: green;
 }
 
-.catDiv{
+.allCatsDiv{
   text-align: center;
 }
 
