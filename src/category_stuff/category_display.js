@@ -31,7 +31,7 @@ const displayCategory = (category) => {
   const editbtn = magicDOMTools.createAddtextAddclasses("button", "Edit", "normalBtn", "catBtn");
   const deletebtn = magicDOMTools.createAddtextAddclasses("button", "Delete", "normalBtn", "catBtn");
 
-  magicDOMTools.appendToBody(table, addbtn, editbtn, deletebtn);
+  magicDOMTools.appendToDisplayContent(table, addbtn, editbtn, deletebtn);
 }
 
 export{displayCategory}

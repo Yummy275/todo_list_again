@@ -1,6 +1,7 @@
 import {magicDOMTools} from "../magicDOMTools"
 import {categoriesHolder} from "./categories_holder"
 import {createCategory} from "./button_functions"
+import {specificCategoryLink} from "./button_functions"
 
 const categoriesDisplay = () => {
   const catDiv = magicDOMTools.createAddtextAddclasses('div', "", 'catDiv');
@@ -9,7 +10,7 @@ const categoriesDisplay = () => {
   for (var i = 0; i < categoriesHolder.container.length; i++) {
     const categoryLink = magicDOMTools.createAddtextAddclasses('button', categoriesHolder.container[i].title,
       'categoryLink');
-    /*categoryLink.addEventListener("click", );*/
+    categoryLink.addEventListener("click", specificCategoryLink.bind(event, categoriesHolder.container[i]));
     catDiv.appendChild(categoryLink);
   }
 

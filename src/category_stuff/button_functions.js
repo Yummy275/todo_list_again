@@ -2,6 +2,11 @@ import {getNewCategoryName} from "../user_info_getter"
 import {todoCategoryFactory} from "./category"
 import {categoriesHolder} from "./categories_holder"
 import {displayAllCategories} from "../displayer"
+import {displaySpecificCategory} from "../displayer"
+
+const specificCategoryLink = (category) => {
+  displaySpecificCategory(category);
+}
 
 const createCategory = () => {
   const newCat = todoCategoryFactory(getNewCategoryName());
@@ -9,4 +14,5 @@ const createCategory = () => {
   displayAllCategories();
 }
 
-export {createCategory}
+export {createCategory,
+        specificCategoryLink}
