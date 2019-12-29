@@ -6,6 +6,7 @@ import {categoriesHolder} from "./category_stuff/categories_holder"
 
 const newCat = todoCategoryFactory("long term");
 const newTodo = todoFactory("gym", "keep it up", "never", "yes");
+newCat.add(newTodo);
 categoriesHolder.addToContainer(newCat);
 
 displayAllCategories();
