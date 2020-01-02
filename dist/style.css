@@ -2,10 +2,13 @@
 }
 
 .catBtn{
+  display: block;
+  margin-top: 4px;
 }
 
 .catEditDeleteBtnDiv{
-  display: inline-grid;
+  display: inline-block;
+  margin-left: 40px;
 }
 
 .categoryLink{
